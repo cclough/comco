@@ -1,0 +1,14 @@
+.application_flash
+  - if flash.any? && flash[:success] != 'Welcome'
+    - flash.each do |key, value|
+      %div{ class: "alert alert-#{key} fade in", "data-dismiss" => "alert"}
+
+        - if "#{key}" == "success"
+          %i.icon.ion-android-done.application_flash_alert_icon
+        - elsif "#{key}" == "error"
+          %i.icon.ion-ios-close-empty.application_flash_alert_icon
+
+        %a.close
+          %i.icon.ion-ios-close-empty
+
+        = flash.discard(key).html_safe

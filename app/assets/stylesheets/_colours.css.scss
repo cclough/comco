@@ -1,0 +1,69 @@
+
+// $cn_grey_-35: rgba(35,35,35,1); // Text and borders in places
+$cn_grey_-3: #333333;
+// $cn_grey_-275: #434343;
+// $cn_grey_-25: #575757;
+// $cn_grey_-2: #747474; 
+// $cn_grey_-15: #a6a6a6;
+// $cn_grey_-1: #dee1e3; 
+// $cn_grey_-05: #e9e9e9; 
+// $cn_grey_0: #edeff0;
+// $cn_grey_05: #f2f4f5;
+// $cn_grey_1: #f8f8f8;
+
+// $cn_red_0: #c18176; // more red!
+// $cn_red_1: #d6a69e; // red
+// $cn_red_2: #e7cac5; // red
+
+$cn_blue_0: rgb(56,121,217);//#3879D9; //good blue from icecomm.io
+// $cn_blue_05: #6f9ee3; //good blue from icecomm.io
+$cn_blue_1: #a3c0eb; //good blue from icecomm.io
+// $cn_blue_2: #cbdbf2;
+
+// $cn_purple_0:#9b59b6;
+
+$cn_green_0: rgba(46,204,113,1);//#2ECC71; //Emerald - http://designmodo.github.io/Flat-UI/
+// $cn_green_1: lighten($cn_green_0, 10%);
+// $cn_green_-1:#27AE60; //Nephritis - http://designmodo.github.io/Flat-UI/
+
+// $cn_orange_0:#ffa820;
+// $cn_orange_0a:#ffcd53;//#f1ee26;
+// $cn_orange_1:#ffe1a6;
+
+// $cn_burgundy_0:#760B1F;
+
+// $cn_red_error_0:#CF000F;
+
+// $cn_button_grey_0:#ECF0F1; //Clouds - http://designmodo.github.io/Flat-UI/
+// $cn_button_grey_-1:#BDC3C7; //Silver - http://designmodo.github.io/Flat-UI/
+// $cn_button_grey_-2:#95A5A6; //Concrete - http://designmodo.github.io/Flat-UI/
+// $cn_button_grey_-3:#7F8C8D; //Asbestos - http://designmodo.github.io/Flat-UI/
+
+// $cn_unread_0: #ea4a2f; //for unreads
+// $cn_grey_from_intercom:#eaeaea;
+// $cn_grey_from_producthunt:#f7f7fa;
+
+
+
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+
+
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@mixin prevent_text_highlight {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor:default;
+}
+

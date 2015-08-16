@@ -1,0 +1,122 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@import 'colours';
+
+
+#panel_signup {
+  #panel_signup_pitch{
+    // position:absolute;
+    font-size:40px;
+    margin-top:200px;
+    margin-left:auto;
+    margin-right:auto;
+    // outline:1px solid red;
+    text-align:center;
+  }
+
+  #panel_signup_button_start{
+    // position:absolute;
+    font-size:25px;
+    // top:43%;
+    // right:10%;
+
+    margin-top:100px;
+    margin-left:auto;
+    margin-right:auto;
+    width:100px;
+
+    padding:20px 40px;
+    background-color: $cn_blue_0;
+    font-weight:400;
+    color:white;
+    text-align:center;
+    border-radius:3px;
+    &:hover {
+
+      background-color: lighten($cn_blue_0,10%);
+      cursor:pointer;
+      transition: all 0.15s ease-in-out;
+    }
+  }
+
+}
+
+#panel_main {
+  display:none;
+  background-color:black;
+}
+
+
+
+
+
+
+#panel_main_waiting {
+  font-size:30px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  z-index:100;
+  text-align:center;
+  width:500px;
+  margin-left:-250px;
+  margin-top:-50px;
+  &.arrived {
+    color:$cn_blue_1;
+  }
+}
+
+
+
+
+#panel_main_video_remote video {
+  position:absolute;
+  left:0;
+  top:0px;
+  right:0;
+  height:100%;
+  margin-left:auto;
+  margin-right:auto;
+  z-index:10;
+
+}
+
+#localVideo {
+  position:absolute;
+  top:70px;
+  right:70px;
+
+  width:267px;
+  height:200px;
+
+  z-index:11;
+  outline:1px solid $cn_grey_-3;
+
+  background-color:black;
+}
+
+#panel_main_timer {
+  position:absolute;
+  font-size:80px;
+  bottom:10%;
+  right:10%;
+  font-weight:100;
+  color: $cn_grey_-3;
+  z-index:100000;
+}
+
+
+// #panel_main_partner {
+//   margin-left:auto;
+//   margin-right:auto;
+//   margin-top:13px;
+//   #panel_main_partner_name {
+//     color:white;
+//     font-size:18px;
+//   }
+// }
+
+
